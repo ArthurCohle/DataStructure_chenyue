@@ -35,7 +35,7 @@ struct TblNode/* 散列表结点定义 */
 int NextPrime(int N)
 {
     int i,P;
-    P = N%2 ? N+2:N+1;
+    P = N%2 ? N:N+1;
     while(P < MAXTABLESIZE)
     {
         for(i = (int)sqrt(P);i > 2; i--)
